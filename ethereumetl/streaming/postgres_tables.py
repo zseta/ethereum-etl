@@ -67,7 +67,7 @@ TRANSACTIONS = Table(
     Column('receipt_contract_address', String),
     Column('receipt_root', String),
     Column('receipt_status', BigInteger),
-    Column('block_timestamp', TIMESTAMP),
+    Column('block_timestamp', TIMESTAMP, primary_key=True),
     Column('block_number', BigInteger),
     Column('block_hash', String),
     Column('max_fee_per_gas', BigInteger),
